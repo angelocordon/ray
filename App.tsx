@@ -2,13 +2,13 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import Home from "screens/Home";
 
-export default function App() {
+const App: React.FC = () => {
 	return (
 		<View style={styles.container}>
 			<Home />
 		</View>
 	);
-}
+};
 
 const styles = StyleSheet.create({
 	container: {
@@ -18,3 +18,5 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 	},
 });
+
+export default App;
