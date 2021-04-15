@@ -1,20 +1,12 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from 'screens/HomeScreen';
-
-const Stack = createStackNavigator();
+import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
+import MainNavigation from 'navigation/MainNavigation';
+import theme from 'styles/theme';
 
 const App: React.FC = () => (
-  <NavigationContainer>
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ headerShown: false }}
-      />
-    </Stack.Navigator>
-  </NavigationContainer>
+  <ThemeProvider theme={theme}>
+    <MainNavigation />
+  </ThemeProvider>
 );
 
 export default App;
