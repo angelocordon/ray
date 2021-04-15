@@ -1,10 +1,18 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
+import styled from 'styled-components/native';
+
+const Container = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.lightWhite};
+`;
 
 const HomeScreen: React.FC = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+  <Container>
     <Text>Hello World</Text>
-  </View>
+  </Container>
 );
 
 export default HomeScreen;
