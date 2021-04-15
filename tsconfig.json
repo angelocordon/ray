@@ -10,8 +10,9 @@
     "strict": true,
     "baseUrl": "./src",
     "paths": {
-      "screens/*": ["screens/*"],
+      "components/*": ["components/*"],
       "navigation/*": ["navigation/*"],
+      "screens/*": ["screens/*"],
       "styles/*": ["assets/styles/*"]
     }
   }
