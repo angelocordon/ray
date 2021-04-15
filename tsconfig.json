@@ -13,7 +13,6 @@
       "screens/*": ["screens/*"],
       "navigation/*": ["navigation/*"],
       "styles/*": ["assets/styles/*"]
-    },
-    "types": ["styled-components-react-native"]
+    }
   }
 }
